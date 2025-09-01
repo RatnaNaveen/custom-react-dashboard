@@ -362,7 +362,8 @@ $spacers: (
   'xl': ($spacer * 8)
 );
 
-$negative-spacers: if($enable-negative-margins, negativify-map($spacers), null);
+$negative-spacers: if($enable-negative-margins, map-negative($spacers), null);
+
 
 // Body
 //
